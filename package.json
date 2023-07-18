@@ -1,0 +1,192 @@
+{
+    "name": "vstoolkit",
+    "displayName": "VSToolKit",
+    "description": "Providing tools for VSCode",
+    "version": "1.0.0",
+    "author": "Philipp B.",
+    "publisher": "Philipp B.",
+    "license": "MIT",
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/phil1436/VSToolKit"
+    },
+    "engines": {
+        "vscode": "^1.80.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "icon": "./assets/logo.png",
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "vstoolkit.moveSelectionToLeft",
+                "title": "Move Selection To Left",
+                "category": "VSToolKit Move"
+            },
+            {
+                "command": "vstoolkit.moveSelectionToRight",
+                "title": "Move Selection To Right",
+                "category": "VSToolKit Move"
+            },
+            {
+                "command": "vstoolkit.translateSelection",
+                "title": "Translate Selection",
+                "category": "VSToolKit Language"
+            },
+            {
+                "command": "vstoolkit.checkSpelling",
+                "title": "Check Spelling",
+                "category": "VSToolKit Language"
+            },
+            {
+                "command": "vstoolkit.createSnapshot",
+                "title": "Create Snapshot of Active File",
+                "category": "VSToolKit Snapshot"
+            },
+            {
+                "command": "vstoolkit.restoreSnapshot",
+                "title": "Restore Snapshot of Active File",
+                "category": "VSToolKit Snapshot"
+            },
+            {
+                "command": "vstoolkit.deleteSnapshot",
+                "title": "Delete Snapshot",
+                "category": "VSToolKit Snapshot"
+            },
+            {
+                "command": "vstoolkit.deleteAllSnapshotsFromActiveFile",
+                "title": "Delete All Snapshots from Active File",
+                "category": "VSToolKit Snapshot"
+            },
+            {
+                "command": "vstoolkit.deleteAllSnapshots",
+                "title": "Delete All Snapshots",
+                "category": "VSToolKit Snapshot"
+            },
+            {
+                "command": "vstoolkit.viewSnapshot",
+                "title": "View Snapshot",
+                "category": "VSToolKit Snapshot"
+            },
+            {
+                "command": "vstoolkit.viewSnapshotFromActiveFile",
+                "title": "View Snapshot of Active File",
+                "category": "VSToolKit Snapshot"
+            },
+            {
+                "command": "vstoolkit.copyToAdvancedClipboard",
+                "title": "Copy To Advanced Clipboard",
+                "category": "VSToolKit Clipboard"
+            },
+            {
+                "command": "vstoolkit.pasteToAdvancedClipboard",
+                "title": "Paste From Advanced Clipboard",
+                "category": "VSToolKit Clipboard"
+            },
+            {
+                "command": "vstoolkit.clearAdvancedClipboard",
+                "title": "Clear Advanced Clipboard",
+                "category": "VSToolKit Clipboard"
+            },
+            {
+                "command": "vstoolkit.deleteFromAdvancedClipboard",
+                "title": "Delete from Advanced Clipboard",
+                "category": "VSToolKit Clipboard"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "vstoolkit.moveSelectionToLeft",
+                "key": "alt+Left",
+                "mac": "options+Left",
+                "when": "vscode.window.activeTextEditor != undefined && !vscode.window.activeTextEditor.selection.isEmpty"
+            },
+            {
+                "command": "vstoolkit.moveSelectionToRight",
+                "key": "alt+Right",
+                "mac": "options+Right",
+                "when": "vscode.window.activeTextEditor != undefined && !vscode.window.activeTextEditor.selection.isEmpty"
+            },
+            {
+                "command": "vstoolkit.copyToAdvancedClipboard",
+                "key": "ctrl+alt+C",
+                "mac": "cmd+options+C",
+                "when": "vscode.window.activeTextEditor != undefined"
+            },
+            {
+                "command": "vstoolkit.pasteToAdvancedClipboard",
+                "key": "ctrl+alt+V",
+                "mac": "cmd+options+V",
+                "when": "vscode.window.activeTextEditor != undefined"
+            }
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "vstoolkit",
+            "properties": {
+                "vstoolkit.move.MoveBetweenLines": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "If enabled move a word from the beginning of a line to the end of the line above or from the end of a line to the beginning of the line below."
+                },
+                "vstoolkit.snapshot.DeleteSnapshotAfterRestore": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "If enabled deletes a snapshot after it gets restored."
+                },
+                "vstoolkit.snapshot.CreateSnapshotWhenRestore": {
+                    "type": "boolean",
+                    "default": true,
+                    "markdownDescription": "If enabled creates a snapshot of the active file when a snapshot get restored."
+                },
+                "vstoolkit.clipboard.DeleteClipboardAfterPaste": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "If enabled deletes the Clipboard entry after paste."
+                },
+                "vstoolkit.clipboard.EmptyClipboardWhenCopy": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "If enable overwrites all entries in the clipboard with the new entry (like normal clipboard)."
+                },
+                "vstoolkit.translate.DefaultTranslate": {
+                    "type": "array",
+                    "default": [
+                        {
+                            "from": "en",
+                            "to": "de"
+                        },
+                        {
+                            "from": "de",
+                            "to": "en"
+                        }
+                    ],
+                    "markdownDescription": "Default translate configuration for `Own Vscode Translate: Translate Selection`.\n\nExample: `[{\"from\":\"en\",\"to\":\"de\"},...]`"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^8.0.0",
+        "@types/mocha": "^10.0.0",
+        "@types/node": "16.x",
+        "@types/vscode": "^1.74.0",
+        "@vscode/test-electron": "^2.2.0",
+        "eslint": "^8.26.0",
+        "glob": "^8.0.3",
+        "mocha": "^10.1.0",
+        "typescript": "^4.8.4"
+    },
+    "dependencies": {
+        "spelling": "^2.0.2",
+        "translate": "^1.4.1"
+    }
+}
