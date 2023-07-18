@@ -32,10 +32,6 @@
 -   [Installation](#installation)
 -   [Workspace](#workspace)
 -   [Commands](#commands)
-    -   [Own Vscode Move](#own-vscode-move)
-    -   [Own VScode Language](#own-vscode-language)
-    -   [Own VScode Snapshot](#own-vscode-snapshot)
-    -   [Own VScode Clipboard](#own-vscode-clipboard)
 -   [Configuration](#configuration)
 -   [Bugs](#bugs)
 -   [Release Notes](#release-notes)
@@ -58,7 +54,7 @@ Translates the selected text to a specified language.
 
 ### Working with Snapshots
 
-Create Snapshots of your current opened file, so you can restore it later.
+Create Snapshots of your currently opened file, so you can restore it later.
 
 ### Advanced Clipboard
 
@@ -96,17 +92,17 @@ This extension will create a directory named _vstoolkit-workspace_ in the same d
 
 ## Commands
 
-### Own Vscode Move
+### VSToolKit Move
 
 -   `Move Selection To Left`: Moves selected text to the left. (`Alt+LeftArrow`)
 -   `Move Selection To Right`: Moves selected text to the right. (`Alt+RightArrow`)
 
-### Own VScode Language
+### VSToolKit Language
 
 -   `Translate Selection`: Translates selected text.
 -   `Check Spelling`: Check the selected text for spelling and suggest other words in case of wrong spelling (**only works for en-US!**).
 
-### Own VScode Snapshot
+### VSToolKit Snapshot
 
 -   `Create Snapshot of Active File`: Create a snapshot of your active file. You can specify a optional name for identification (leave empty if not needed).
 -   `Restore Snapshot of Active File`: Overwrites your active file with the snapshot.
@@ -116,7 +112,7 @@ This extension will create a directory named _vstoolkit-workspace_ in the same d
 -   `View Snapshot`: View a snapshot.
 -   `View Snapshot of Active File`: View a snapshot of your active file.
 
-### Own VScode Clipboard
+### VSToolKit Clipboard
 
 -   `Copy To Advanced Clipboard`: Copies a new entry to the Clipboard.
 
@@ -133,7 +129,7 @@ This extension will create a directory named _vstoolkit-workspace_ in the same d
 
 ## Configuration
 
-Go to `File > Preferences > Settings` and than navigate to `Extensions > OwnVscodeExtension`.
+Go to `File > Preferences > Settings` and than navigate to `Extensions > vstoolkit`.
 
 ### Snapshot
 
@@ -166,18 +162,16 @@ Edit via: _Edit in settings.json_.
 
 ## Bugs
 
--   Snapshots are deleted when installing a new version. Store the [snapshots file](snapshots.json) to an other location an restore it after installing.
+-   _no known bugs_
 
 ---
 
-## [Release Notes](https://github.com/phil1436/ownvscodeextension/blob/master/CHANGELOG.md)
+## [Release Notes](https://github.com/phil1436/VSToolKit/blob/main/CHANGELOG.md)
 
-### [v0.0.5](https://github.com/phil1436/ownvscodeextension/tree/0.0.5)
+### [v1.0.0](https://github.com/phil1436/VSToolKit/tree/1.0.0)
 
--   _workspace_ added
--   Commands added
--   Configurations added
+-   _Initial release_
 
 ---
 
-by Philipp B.
+by [Philipp B.](https://github.com/phil1436)
