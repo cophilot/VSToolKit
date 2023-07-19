@@ -18,7 +18,7 @@
     ],
     "icon": "./assets/logo.png",
     "activationEvents": [],
-    "main": "./extension.js",
+    "main": "./src/extension.js",
     "contributes": {
         "commands": [
             {
@@ -82,7 +82,7 @@
                 "category": "VSToolKit Clipboard"
             },
             {
-                "command": "vstoolkit.pasteToAdvancedClipboard",
+                "command": "vstoolkit.pasteFromAdvancedClipboard",
                 "title": "Paste From Advanced Clipboard",
                 "category": "VSToolKit Clipboard"
             },
@@ -117,7 +117,7 @@
                 "when": "vscode.window.activeTextEditor != undefined"
             },
             {
-                "command": "vstoolkit.pasteToAdvancedClipboard",
+                "command": "vstoolkit.pasteFromAdvancedClipboard",
                 "key": "ctrl+alt+V",
                 "mac": "cmd+options+V",
                 "when": "vscode.window.activeTextEditor != undefined"

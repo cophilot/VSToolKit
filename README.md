@@ -29,6 +29,7 @@
     -   [Translate Text](#translate-text)
     -   [Working with Snapshots](#working-with-snapshots)
     -   [Advanced Clipboard](#advanced-clipboard)
+-   [Requirements](#requirements)
 -   [Installation](#installation)
 -   [Workspace](#workspace)
 -   [Commands](#commands)
@@ -64,7 +65,21 @@ An advanced Clipboard, that can store multiple entries.
 
 ---
 
+## Requirements
+
+-   Visual Studio Code 1.80.0 or higher
+
+---
+
 ## Installation
+
+### Install from VSCode Marketplace
+
+-   Open the Extensions sidebar in Visual Studio Code
+-   Search for `VSToolKit`
+-   Click `Install`
+
+### Install from GitHub
 
 -   Clone this repository (recommended under `~/.vscode/extensions`):
 
@@ -147,7 +162,7 @@ Go to `File > Preferences > Settings` and than navigate to `Extensions > vstoolk
 
 ### Translate
 
--   `Default Translate`: Default translate configuration for [Own Vscode Translate: Translate Selection](https://github.com/phil1436/OwnVscodeExtension#own-vscode-translate). Value is a array of objects:
+-   `Default Translate`: Default translate configuration for [VSToolKit Translate: Translate Selection](#translate-text). Value is a array of objects:
 
 ```json
 [
