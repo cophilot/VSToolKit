@@ -2,7 +2,7 @@
 
 ---
 
-## [v1.0.1](https://github.com/phil1436/VSToolKit/tree/1.0.1) (2023-7-19)
+## [v1.0.3](https://github.com/phil1436/VSToolKit/tree/1.0.3) (2023-7-19)
 
 -   Bug fixes
 

@@ -9,7 +9,7 @@ const Clipboard = require('./commands/Clipboard');
  */
 function activate(context) {
     //move selection to left
-    let disposable = vscode.commands.registerCommand(
+    vscode.commands.registerCommand(
         'vstoolkit.moveSelectionToLeft',
         Move.moveSelectionToLeft
     );
@@ -97,7 +97,6 @@ function activate(context) {
         'vstoolkit.clearAdvancedClipboard',
         Clipboard.clearAdvancedClipboard
     );
-    context.subscriptions.push(disposable);
 }
 
 function deactivate() {}
