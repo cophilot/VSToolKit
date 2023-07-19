@@ -183,9 +183,9 @@ Edit via: _Edit in settings.json_.
 
 ## [Release Notes](https://github.com/phil1436/VSToolKit/blob/main/CHANGELOG.md)
 
-### [v1.0.0](https://github.com/phil1436/VSToolKit/tree/1.0.0)
+### [v1.0.1](https://github.com/phil1436/VSToolKit/tree/1.0.1)
 
--   _Initial release_
+-   Bug fixes
 
 ---
 
