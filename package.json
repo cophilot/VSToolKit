@@ -17,7 +17,23 @@
         "Other"
     ],
     "icon": "./assets/logo.png",
-    "activationEvents": [],
+    "activationEvents": [
+        "onCommand:vstoolkit.moveSelectionToLeft",
+        "onCommand:vstoolkit.moveSelectionToRight",
+        "onCommand:vstoolkit.translateSelection",
+        "onCommand:vstoolkit.checkSpelling",
+        "onCommand:vstoolkit.createSnapshot",
+        "onCommand:vstoolkit.restoreSnapshot",
+        "onCommand:vstoolkit.deleteSnapshot",
+        "onCommand:vstoolkit.deleteAllSnapshotsFromActiveFile",
+        "onCommand:vstoolkit.deleteAllSnapshots",
+        "onCommand:vstoolkit.viewSnapshot",
+        "onCommand:vstoolkit.viewSnapshotFromActiveFile",
+        "onCommand:vstoolkit.copyToAdvancedClipboard",
+        "onCommand:vstoolkit.pasteFromAdvancedClipboard",
+        "onCommand:vstoolkit.clearAdvancedClipboard",
+        "onCommand:vstoolkit.deleteFromAdvancedClipboard"
+    ],
     "main": "./src/extension.js",
     "contributes": {
         "commands": [
