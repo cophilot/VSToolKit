@@ -1,6 +1,8 @@
 <div align="center">
     <br />
+    <a href="https://marketplace.visualstudio.com/items?itemName=PhilippBo.vstoolkit">
     <img src="https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png" alt="OwnVscodeExtensionLogo" width="35%"/>
+    </a>
     <h1>VSToolKit</h1>
     <p>
     Providing tools for <a href="https://code.visualstudio.com/">Microsoft's Visual Studio Code</a>.
@@ -21,6 +23,10 @@
         <img src="https://img.shields.io/github/last-commit/phil1436/VSToolKit" alt="last commit">
     </a>
 </div>
+
+---
+
+View on VSCode Marketplace: [VSToolKit](https://marketplace.visualstudio.com/items?itemName=PhilippBo.vstoolkit)
 
 ---
 
