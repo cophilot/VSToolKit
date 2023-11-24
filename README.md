@@ -69,6 +69,10 @@ An advanced Clipboard, that can store multiple entries.
 
 > Keyboard Shortcut: `Ctrl + Alt + C/V` _(Mac: `Cmd + Options + C/V`)_
 
+### Markdown Overview
+
+Adds a Overview of your current opened Markdown file.
+
 ---
 
 ## Requirements
@@ -146,6 +150,10 @@ This extension will create a directory named _vstoolkit-workspace_ in the same d
 -   `Clear Advanced Clipboard`: Deletes all entries in the clipboard.
 -   `Delete from Advanced Clipboard`: Deletes one entry from the clipboard.
 
+### VSToolKit Clipboard
+
+-   `Add Markdown Overview`: Adds a Markdown Overview to the current opened Markdown file.
+
 ---
 
 ## Configuration
@@ -179,6 +187,10 @@ Go to `File > Preferences > Settings` and than navigate to `Extensions > vstoolk
 
 Edit via: _Edit in settings.json_.
 
+### Markdown
+
+-   `Include First Heading`: If enabled includes the first heading in the overview (Default: _disabled_).
+
 ---
 
 ## Bugs
@@ -189,9 +201,10 @@ Edit via: _Edit in settings.json_.
 
 ## [Release Notes](https://github.com/phil1436/VSToolKit/blob/main/CHANGELOG.md)
 
-### [v1.0.3](https://github.com/phil1436/VSToolKit/tree/1.0.3)
+### [v1.1.0](https://github.com/phil1436/VSToolKit/tree/1.1.0)
 
--   Bug fixes
+-   Command `Add Markdown Overview` added
+-   Color theme `VSToolKit Theme dark` added
 
 ---
 

@@ -3,6 +3,7 @@ const Move = require('./commands/Move');
 const Language = require('./commands/Language');
 const Snapshot = require('./commands/Snapshot');
 const Clipboard = require('./commands/Clipboard');
+const Markdown = require('./commands/Markdown');
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -96,6 +97,12 @@ function activate(context) {
     vscode.commands.registerCommand(
         'vstoolkit.clearAdvancedClipboard',
         Clipboard.clearAdvancedClipboard
+    );
+
+    //clearToAdvancedClipboard
+    vscode.commands.registerCommand(
+        'vstoolkit.addMarkdownOverview',
+        Markdown.addMarkdownOverview
     );
 }
 

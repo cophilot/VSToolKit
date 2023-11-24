@@ -2,7 +2,7 @@
     "name": "vstoolkit",
     "displayName": "VSToolKit",
     "description": "Providing tools for VSCode",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "author": "Philipp B.",
     "publisher": "PhilippBo",
     "license": "MIT",
@@ -17,23 +17,6 @@
         "Other"
     ],
     "icon": "./assets/logo.png",
-    "activationEvents": [
-        "onCommand:vstoolkit.moveSelectionToLeft",
-        "onCommand:vstoolkit.moveSelectionToRight",
-        "onCommand:vstoolkit.translateSelection",
-        "onCommand:vstoolkit.checkSpelling",
-        "onCommand:vstoolkit.createSnapshot",
-        "onCommand:vstoolkit.restoreSnapshot",
-        "onCommand:vstoolkit.deleteSnapshot",
-        "onCommand:vstoolkit.deleteAllSnapshotsFromActiveFile",
-        "onCommand:vstoolkit.deleteAllSnapshots",
-        "onCommand:vstoolkit.viewSnapshot",
-        "onCommand:vstoolkit.viewSnapshotFromActiveFile",
-        "onCommand:vstoolkit.copyToAdvancedClipboard",
-        "onCommand:vstoolkit.pasteFromAdvancedClipboard",
-        "onCommand:vstoolkit.clearAdvancedClipboard",
-        "onCommand:vstoolkit.deleteFromAdvancedClipboard"
-    ],
     "main": "./src/extension.js",
     "contributes": {
         "commands": [
@@ -111,6 +94,11 @@
                 "command": "vstoolkit.deleteFromAdvancedClipboard",
                 "title": "Delete from Advanced Clipboard",
                 "category": "VSToolKit Clipboard"
+            },
+            {
+                "command": "vstoolkit.addMarkdownOverview",
+                "title": "Add a Markdown Overview",
+                "category": "VSToolKit Markdown"
             }
         ],
         "keybindings": [
@@ -181,9 +169,21 @@
                         }
                     ],
                     "markdownDescription": "Default translate configuration for `Own Vscode Translate: Translate Selection`.\n\nExample: `[{\"from\":\"en\",\"to\":\"de\"},...]`"
+                },
+                "vstoolkit.Markdown.IncludeFirstHeading": {
+                    "type": "boolean",
+                    "default": false,
+                    "markdownDescription": "If enabled will include the first heading in the overview"
                 }
             }
-        }
+        },
+        "themes": [
+            {
+                "label": "VSToolKit Theme Dark",
+                "uiTheme": "vs-dark",
+                "path": "./theme/VSToolKit-color-theme.json"
+            }
+        ]
     },
     "scripts": {
         "lint": "eslint .",
