@@ -1,7 +1,7 @@
 <div align="center">
     <br />
     <a href="https://marketplace.visualstudio.com/items?itemName=PhilippBo.vstoolkit">
-    <img src="https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png" alt="OwnVscodeExtensionLogo" width="35%"/>
+    <img src="https://raw.githubusercontent.com/cophilot/VSToolKit/main/assets/logo.png" alt="OwnVscodeExtensionLogo" width="35%"/>
     </a>
     <h1>VSToolKit</h1>
     <p>
@@ -10,17 +10,17 @@
 </div>
 
 <div align="center">
-    <a href="https://github.com/phil1436/ownvscodeextension/releases">
-        <img src= "https://img.shields.io/github/v/release/phil1436/VSToolKit?display_name=tag" alt="current release">
+    <a href="https://github.com/cophilot/ownvscodeextension/releases">
+        <img src= "https://img.shields.io/github/v/release/cophilot/VSToolKit?display_name=tag" alt="current release">
     </a>
-    <a href="https://github.com/phil1436/VSToolKit/blob/master/LICENSE">
-        <img src="https://img.shields.io/github/license/phil1436/VSToolKit" alt="license">
+    <a href="https://github.com/cophilot/VSToolKit/blob/master/LICENSE">
+        <img src="https://img.shields.io/github/license/cophilot/VSToolKit" alt="license">
     </a>
-    <a href="https://github.com/phil1436/VSToolKit/stargazers">
-        <img src="https://img.shields.io/github/stars/phil1436/VSToolKit" alt="stars">
+    <a href="https://github.com/cophilot/VSToolKit/stargazers">
+        <img src="https://img.shields.io/github/stars/cophilot/VSToolKit" alt="stars">
     </a>
-    <a href="https://github.com/phil1436/VSToolKit/commits/master">
-        <img src="https://img.shields.io/github/last-commit/phil1436/VSToolKit" alt="last commit">
+    <a href="https://github.com/cophilot/VSToolKit/commits/master">
+        <img src="https://img.shields.io/github/last-commit/cophilot/VSToolKit" alt="last commit">
     </a>
 </div>
 
@@ -94,10 +94,10 @@ Adds a Overview of your current opened Markdown file.
 -   Clone this repository (recommended under `~/.vscode/extensions`):
 
 ```shell
-git clone https://github.com/phil1436/VSToolKit C:\Users\<your-user>\.vscode\extensions\VSToolKit
+git clone https://github.com/cophilot/VSToolKit C:\Users\<your-user>\.vscode\extensions\VSToolKit
 ```
 
-or download the [latest realease](https://github.com/phil1436/VSToolKit/releases/latest) and extract the file into `~/.vscode/extensions`.
+or download the [latest realease](https://github.com/cophilot/VSToolKit/releases/latest) and extract the file into `~/.vscode/extensions`.
 
 -   Then go into the project folder an run:
 
@@ -199,13 +199,13 @@ Edit via: _Edit in settings.json_.
 
 ---
 
-## [Release Notes](https://github.com/phil1436/VSToolKit/blob/main/CHANGELOG.md)
+## [Release Notes](https://github.com/cophilot/VSToolKit/blob/main/CHANGELOG.md)
 
-### [v1.1.0](https://github.com/phil1436/VSToolKit/tree/1.1.0)
+### [v1.1.0](https://github.com/cophilot/VSToolKit/tree/1.1.0)
 
 -   Command `Add Markdown Overview` added
 -   Color theme `VSToolKit Theme dark` added
 
 ---
 
-by [Philipp B.](https://github.com/phil1436)
+by [Philipp B.](https://github.com/cophilot)
