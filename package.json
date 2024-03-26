@@ -203,6 +203,6 @@
     },
     "dependencies": {
         "spelling": "^2.0.2",
-        "translate": "^1.4.1"
+        "translate": "^3.0.0"
     }
 }
